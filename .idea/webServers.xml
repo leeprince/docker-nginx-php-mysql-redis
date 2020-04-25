@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="191edeaa-5698-4b8d-9f22-bda850ab3939" name="docker-ffc-innerNet" url="http://62.234.101.155">
+        <fileTransfer host="62.234.101.155" port="5001" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="5001" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
