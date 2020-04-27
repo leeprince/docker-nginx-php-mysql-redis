@@ -31,6 +31,8 @@ docker run -d --name php-prince php:7.4.5-fpm-alpine-redis-swoole
 
 # 进阶用法
 docker run -d -p 9000:9000 -v $PWD/conf/php.ini:/usr/local/etc/php/php.ini \
+    -v $PWD/conf/www.conf:/usr/local/etc/php-fpm.d/www.conf \
+    -v $PWD/html/:/var/www/html \
     --name php-prince php:7.4.5-fpm-alpine-redis-swoole
 
 # 进入已启动的容器中
