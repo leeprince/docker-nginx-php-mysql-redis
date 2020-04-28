@@ -11,7 +11,7 @@ docker run -d -p 80:80 -v $PWD/logs:/usr/local/nginx/logs \
     --name nginx-prince nginx:1.17.8-centos8
 
 # 进阶用法（覆盖所有匿名卷）。确定本地已经下载好 nginx.conf 和 default.conf(包含 localhost 的 server 层)
-docker run -d -p 80:80 -v $PWD/conf/conf.d:/usr/local/nginx/conf/conf.d \
+docker run -d -p 80:80 --network myNetwork -v $PWD/conf/conf.d:/usr/local/nginx/conf/conf.d \
     -v $PWD/conf/nginx.conf:/usr/local/nginx/conf/nginx.conf \
     -v $PWD/logs:/usr/local/nginx/logs \
     -v $PWD/html:/usr/local/nginx/html \
@@ -29,8 +29,12 @@ docker build -t php:7.4.5-fpm-alpine-redis-swoole .
 # 简单用法
 docker run -d --name php-prince php:7.4.5-fpm-alpine-redis-swoole
 
+# 简单用法
+docker run -d -p 9000:9000 -v $PWD/html/:/var/www/html \
+    --name php-prince php:7.4.5-fpm-alpine-redis-swoole
+
 # 进阶用法
-docker run -d -p 9000:9000 -v $PWD/conf/php.ini:/usr/local/etc/php/php.ini \
+docker run -d -p 9000:9000 --network myNetwork -v $PWD/conf/php.ini:/usr/local/etc/php/php.ini \
     -v $PWD/conf/www.conf:/usr/local/etc/php-fpm.d/www.conf \
     -v $PWD/html/:/var/www/html \
     --name php-prince php:7.4.5-fpm-alpine-redis-swoole

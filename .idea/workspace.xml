@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20779899-9bb0-4c6f-a29f-d76f9805419d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/html/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx/conf/conf.d/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/conf/conf.d/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/conf/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/php/conf/php.ini" afterDir="false" />
-    </list>
+    <list default="true" id="20779899-9bb0-4c6f-a29f-d76f9805419d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="169">
-                <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+              <first_editor relative-caret-position="234">
+                <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               </first_editor>
               <second_editor />
             </state>
@@ -119,8 +113,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="455" />
-    <option name="y" value="81" />
+    <option name="x" value="342" />
+    <option name="y" value="177" />
     <option name="width" value="1225" />
     <option name="height" value="792" />
   </component>
@@ -240,18 +234,17 @@
       <workItem from="1587802724317" duration="1390000" />
       <workItem from="1587804157636" duration="31068000" />
       <workItem from="1587886217013" duration="24796000" />
-      <workItem from="1587994922692" duration="4979000" />
+      <workItem from="1587994922692" duration="6328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62233000" />
+    <option name="totallyTimeSpent" value="63582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="455" y="81" width="1225" height="792" extended-state="0" />
-    <editor active="true" />
+    <frame x="342" y="177" width="1225" height="792" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20202874" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20202874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -265,7 +258,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49957734" weight="0.32714286" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.37571427" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.37571427" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50042266" side_tool="true" weight="0.32714286" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -388,8 +381,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="169">
-            <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <first_editor relative-caret-position="234">
+            <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           </first_editor>
           <second_editor />
         </state>
