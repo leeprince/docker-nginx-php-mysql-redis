@@ -3,7 +3,7 @@
 ##### nginx:1.17.8-centos8
 ```
 # 构建镜像
-docker build -t nginx:1.17.8-centos8 .
+docker build -t nginx:1.17.8-centos8 -f nginx-source-dockerfile
 
 # 简单用法（简单覆盖匿名卷）
 docker run -d -p 80:80 -v $PWD/logs:/usr/local/nginx/logs \
@@ -55,6 +55,10 @@ docker build -t redis:5.0.8-alpine .
 
 # 简单用法
 docker run -d -p 6379:6379 -v $PWD/data:/usr/src/redis/data \
+    --name redis-prince redis:5.0.8-alpine
+    
+# 进阶用法
+docker run -d -p 6379:6379 --network myNetwork -v $PWD/data:/usr/src/redis/data \
     --name redis-prince redis:5.0.8-alpine
     
 # 进入已启动的容器中
