@@ -1,0 +1,46 @@
+1:C 02 May 2020 18:34:45.400 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 02 May 2020 18:34:45.403 # Redis version=6.0.1, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 02 May 2020 18:34:45.405 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 02 May 2020 18:34:45.414 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 02 May 2020 18:34:45.417 # Server initialized
+1:M 02 May 2020 18:34:45.419 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 02 May 2020 18:34:45.423 * Ready to accept connections
+1:S 02 May 2020 18:35:40.666 * Before turning into a replica, using my own master parameters to synthesize a cached master: I may be able to synchronize with the new master with just a partial transfer.
+1:S 02 May 2020 18:35:40.669 * REPLICAOF redis-m:6379 enabled (user request from 'id=4 addr=127.0.0.1:51296 fd=7 name= age=30 idle=0 flags=N db=0 sub=0 psub=0 multi=-1 qbuf=40 qbuf-free=32728 obl=0 oll=0 omem=0 events=r cmd=slaveof user=default')
+1:S 02 May 2020 18:35:41.623 * Connecting to MASTER redis-m:6379
+1:S 02 May 2020 18:35:41.627 * MASTER <-> REPLICA sync started
+1:S 02 May 2020 18:35:41.630 * Non blocking connect for SYNC fired the event.
+1:S 02 May 2020 18:35:41.633 * Master replied to PING, replication can continue...
+1:S 02 May 2020 18:35:41.636 * Trying a partial resynchronization (request 40a8a324e6943eae8ee31af2c0db597f47dcd1d7:1).
+1:S 02 May 2020 18:35:41.649 * Full resync from master: 35c6765682bc8f39ca959d4800f49de840a0d4c5:0
+1:S 02 May 2020 18:35:41.651 * Discarding previously cached master state.
+1:S 02 May 2020 18:35:41.725 * MASTER <-> REPLICA sync: receiving 175 bytes from master to disk
+1:S 02 May 2020 18:35:41.727 * MASTER <-> REPLICA sync: Flushing old data
+1:S 02 May 2020 18:35:41.729 * MASTER <-> REPLICA sync: Loading DB in memory
+1:S 02 May 2020 18:35:41.731 * Loading RDB produced by version 6.0.1
+1:S 02 May 2020 18:35:41.733 * RDB age 0 seconds
+1:S 02 May 2020 18:35:41.735 * RDB memory usage when created 1.83 Mb
+1:S 02 May 2020 18:35:41.737 * MASTER <-> REPLICA sync: Finished with success
+1:S 02 May 2020 18:49:46.078 * 1 changes in 900 seconds. Saving...
+1:S 02 May 2020 18:49:46.080 * Background saving started by pid 25
+25:C 02 May 2020 18:49:46.083 * DB saved on disk
+25:C 02 May 2020 18:49:46.085 * RDB: 0 MB of memory used by copy-on-write
+1:S 02 May 2020 18:49:46.185 * Background saving terminated with success

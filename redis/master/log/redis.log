@@ -1,0 +1,38 @@
+1:C 02 May 2020 18:31:39.353 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 02 May 2020 18:31:39.358 # Redis version=6.0.1, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 02 May 2020 18:31:39.361 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 02 May 2020 18:31:39.368 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 02 May 2020 18:31:39.370 # Server initialized
+1:M 02 May 2020 18:31:39.372 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 02 May 2020 18:31:39.375 * Ready to accept connections
+1:M 02 May 2020 18:35:41.639 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 02 May 2020 18:35:41.641 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '40a8a324e6943eae8ee31af2c0db597f47dcd1d7', my replication IDs are '29faed329e756b6ea251a5d1796deaaa5739faa2' and '0000000000000000000000000000000000000000')
+1:M 02 May 2020 18:35:41.643 * Starting BGSAVE for SYNC with target: disk
+1:M 02 May 2020 18:35:41.645 * Background saving started by pid 32
+32:C 02 May 2020 18:35:41.647 * DB saved on disk
+32:C 02 May 2020 18:35:41.651 * RDB: 0 MB of memory used by copy-on-write
+1:M 02 May 2020 18:35:41.721 * Background saving terminated with success
+1:M 02 May 2020 18:35:41.724 * Synchronization with replica 172.18.0.3:6379 succeeded
+1:M 02 May 2020 18:50:42.013 * 1 changes in 900 seconds. Saving...
+1:M 02 May 2020 18:50:42.016 * Background saving started by pid 35
+35:C 02 May 2020 18:50:42.019 * DB saved on disk
+35:C 02 May 2020 18:50:42.023 * RDB: 0 MB of memory used by copy-on-write
+1:M 02 May 2020 18:50:42.121 * Background saving terminated with success

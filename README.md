@@ -50,18 +50,29 @@ docker exec -it php-prince sh
 #### redis:5.0.8-alpine
 
 ```
-# 构建镜像
-docker build -t redis:5.0.8-alpine .
+# 基础镜像：FROM alpine
 
-# 简单用法
+## 构建镜像
+docker build -t redis:5.0.8-alpine ./redis-source-dockerfile
+
+## 简单用法
 docker run -d -p 6379:6379 -v $PWD/data:/usr/src/redis/data \
     --name redis-prince redis:5.0.8-alpine
     
-# 进阶用法
+## 进阶用法
 docker run -d -p 6379:6379 --network myNetwork -v $PWD/data:/usr/src/redis/data \
     --name redis-prince redis:5.0.8-alpine
     
-# 进入已启动的容器中
+## 进入已启动的容器中
 docker run -it redis-prince sh
+
+
+# 官方镜像：FROM redis
+## 主从配置
+docker run -d --network myNet -p 63790:6379 -v $PWD/master:/usr/local/etc/redis --name redis-m redis:v1 
+docker run -d --network myNet -p 63791:6379 -v $PWD/slave01:/usr/local/etc/redis --name redis-s01 redis:v1
 ```
+
+
+#### mysql 
 

@@ -1,3 +1,5 @@
 FROM nginx:1.17.8-alpine
 
 VOLUME ["/etc/nginx/conf.d/", "/usr/share/nginx/html/", "/var/log/nginx/"]
+
+WORKDIR /etc/nginx
