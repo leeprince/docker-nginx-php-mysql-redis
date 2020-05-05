@@ -68,9 +68,14 @@ docker run -it redis-prince sh
 
 
 # 官方镜像：FROM redis
-## 主从配置
+## 主从配置; 当前环境redis:v1 = leeprince/redis:latest。注意检查镜像和文件路径
 docker run -d --network myNet -p 63790:6379 -v $PWD/master:/usr/local/etc/redis --name redis-m redis:v1 
 docker run -d --network myNet -p 63791:6379 -v $PWD/slave01:/usr/local/etc/redis --name redis-s01 redis:v1
+## 测试主从复制延迟；--privileged(容器将拥有访问主机所有设备的权限)
+docker run -d --privileged --network myNet -p 63792:6379 -v $PWD/slave02:/usr/local/etc/redis --name redis-s02 redis:v1
+    
+    tc qdisc add dev eth0 root netem delay 5000ms
+    tc qdisc del dev eth0 root netem delay 5000ms
 ```
 
 

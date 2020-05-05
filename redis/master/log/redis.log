@@ -36,3 +36,157 @@
 35:C 02 May 2020 18:50:42.019 * DB saved on disk
 35:C 02 May 2020 18:50:42.023 * RDB: 0 MB of memory used by copy-on-write
 1:M 02 May 2020 18:50:42.121 * Background saving terminated with success
+1:C 05 May 2020 02:35:56.954 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 May 2020 02:35:56.956 # Redis version=6.0.1, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 May 2020 02:35:56.957 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 May 2020 02:35:56.964 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 05 May 2020 02:35:56.965 # Server initialized
+1:M 05 May 2020 02:35:56.966 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 05 May 2020 02:35:56.969 * Loading RDB produced by version 6.0.1
+1:M 05 May 2020 02:35:56.971 * RDB age 200248 seconds
+1:M 05 May 2020 02:35:56.972 * RDB memory usage when created 1.79 Mb
+1:M 05 May 2020 02:35:56.974 * DB loaded from disk: 0.005 seconds
+1:M 05 May 2020 02:35:56.976 * Ready to accept connections
+1:M 05 May 2020 02:50:57.010 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 02:50:57.013 * Background saving started by pid 24
+24:C 05 May 2020 02:50:57.015 * DB saved on disk
+24:C 05 May 2020 02:50:57.017 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 02:50:57.120 * Background saving terminated with success
+1:signal-handler (1588647297) Received SIGTERM scheduling shutdown...
+1:M 05 May 2020 02:54:57.963 # User requested shutdown...
+1:M 05 May 2020 02:54:57.965 * Saving the final RDB snapshot before exiting.
+1:M 05 May 2020 02:54:57.968 * DB saved on disk
+1:M 05 May 2020 02:54:57.970 * Removing the pid file.
+1:M 05 May 2020 02:54:57.972 # Redis is now ready to exit, bye bye...
+1:C 05 May 2020 02:54:58.427 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 05 May 2020 02:54:58.430 # Redis version=6.0.1, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 05 May 2020 02:54:58.432 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.1 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 05 May 2020 02:54:58.437 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 05 May 2020 02:54:58.439 # Server initialized
+1:M 05 May 2020 02:54:58.441 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 05 May 2020 02:54:58.444 * Loading RDB produced by version 6.0.1
+1:M 05 May 2020 02:54:58.446 * RDB age 1 seconds
+1:M 05 May 2020 02:54:58.448 * RDB memory usage when created 0.81 Mb
+1:M 05 May 2020 02:54:58.450 * DB loaded from disk: 0.007 seconds
+1:M 05 May 2020 02:54:58.452 * Ready to accept connections
+1:M 05 May 2020 02:58:44.063 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 02:58:44.064 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'c784a550f6d30a3b6e8a5d93fa91c10587e804f3', my replication IDs are '705dab4d88646c76bc13008ce3274c23c39d12ec' and '0000000000000000000000000000000000000000')
+1:M 05 May 2020 02:58:44.066 * Starting BGSAVE for SYNC with target: disk
+1:M 05 May 2020 02:58:44.068 * Background saving started by pid 26
+26:C 05 May 2020 02:58:44.070 * DB saved on disk
+26:C 05 May 2020 02:58:44.072 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 02:58:44.147 * Background saving terminated with success
+1:M 05 May 2020 02:58:44.150 * Synchronization with replica 172.18.0.3:6379 succeeded
+1:M 05 May 2020 04:05:14.114 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 04:05:14.116 * Background saving started by pid 27
+27:C 05 May 2020 04:05:14.119 * DB saved on disk
+27:C 05 May 2020 04:05:14.121 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 04:05:14.222 * Background saving terminated with success
+1:M 05 May 2020 04:08:44.376 # Connection with replica 172.18.0.3:6379 lost.
+1:M 05 May 2020 04:09:45.806 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 04:09:45.808 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for '95f92db03f0c235e0cf6b50dab92c3eeac51e8b4', my replication IDs are '946b77b12a82454e680ab567c845551602d8d11d' and '0000000000000000000000000000000000000000')
+1:M 05 May 2020 04:09:45.809 * Starting BGSAVE for SYNC with target: disk
+1:M 05 May 2020 04:09:45.811 * Background saving started by pid 28
+28:C 05 May 2020 04:09:45.813 * DB saved on disk
+28:C 05 May 2020 04:09:45.815 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 04:09:45.889 * Background saving terminated with success
+1:M 05 May 2020 04:09:45.892 * Synchronization with replica 172.18.0.3:6379 succeeded
+1:M 05 May 2020 04:24:46.049 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 04:24:46.055 * Background saving started by pid 29
+29:C 05 May 2020 04:24:46.059 * DB saved on disk
+29:C 05 May 2020 04:24:46.062 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 04:24:46.162 * Background saving terminated with success
+1:M 05 May 2020 04:39:47.092 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 04:39:47.097 * Background saving started by pid 30
+30:C 05 May 2020 04:39:47.100 * DB saved on disk
+30:C 05 May 2020 04:39:47.104 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 04:39:47.204 * Background saving terminated with success
+1:M 05 May 2020 05:06:59.837 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 05:06:59.843 * Background saving started by pid 31
+31:C 05 May 2020 05:06:59.846 * DB saved on disk
+31:C 05 May 2020 05:06:59.851 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 05:06:59.948 * Background saving terminated with success
+1:M 05 May 2020 05:22:00.047 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 05:22:00.051 * Background saving started by pid 32
+32:C 05 May 2020 05:22:00.054 * DB saved on disk
+32:C 05 May 2020 05:22:00.056 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 05:22:00.157 * Background saving terminated with success
+1:M 05 May 2020 06:22:51.857 * Replica 172.18.0.4:6379 asks for synchronization
+1:M 05 May 2020 06:22:51.858 * Partial resynchronization not accepted: Replication ID mismatch (Replica asked for 'e6ce1b8069b882367dbb2586385647755b320610', my replication IDs are '946b77b12a82454e680ab567c845551602d8d11d' and '0000000000000000000000000000000000000000')
+1:M 05 May 2020 06:22:51.859 * Starting BGSAVE for SYNC with target: disk
+1:M 05 May 2020 06:22:51.861 * Background saving started by pid 33
+33:C 05 May 2020 06:22:51.863 * DB saved on disk
+33:C 05 May 2020 06:22:51.865 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 06:22:51.945 * Background saving terminated with success
+1:M 05 May 2020 06:22:51.950 * Synchronization with replica 172.18.0.4:6379 succeeded
+1:M 05 May 2020 06:37:52.005 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 06:37:52.007 * Background saving started by pid 34
+34:C 05 May 2020 06:37:52.009 * DB saved on disk
+34:C 05 May 2020 06:37:52.011 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 06:37:52.112 * Background saving terminated with success
+1:M 05 May 2020 06:52:53.036 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 06:52:53.042 * Background saving started by pid 35
+35:C 05 May 2020 06:52:53.045 * DB saved on disk
+35:C 05 May 2020 06:52:53.048 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 06:52:53.149 * Background saving terminated with success
+1:M 05 May 2020 07:45:10.281 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 07:45:10.283 * Background saving started by pid 36
+36:C 05 May 2020 07:45:10.285 * DB saved on disk
+36:C 05 May 2020 07:45:10.288 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 07:45:10.389 * Background saving terminated with success
+1:M 05 May 2020 08:00:11.096 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 08:00:11.101 * Background saving started by pid 37
+37:C 05 May 2020 08:00:11.103 * DB saved on disk
+37:C 05 May 2020 08:00:11.108 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 08:00:11.208 * Background saving terminated with success
+1:M 05 May 2020 08:09:03.736 * 10 changes in 300 seconds. Saving...
+1:M 05 May 2020 08:09:03.739 * Background saving started by pid 38
+38:C 05 May 2020 08:09:03.742 * DB saved on disk
+38:C 05 May 2020 08:09:03.745 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 08:09:03.847 * Background saving terminated with success
+1:M 05 May 2020 08:24:04.041 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 08:24:04.045 * Background saving started by pid 39
+39:C 05 May 2020 08:24:04.048 * DB saved on disk
+39:C 05 May 2020 08:24:04.052 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 08:24:04.154 * Background saving terminated with success
+1:M 05 May 2020 09:31:53.281 * 1 changes in 900 seconds. Saving...
+1:M 05 May 2020 09:31:53.284 * Background saving started by pid 40
+40:C 05 May 2020 09:31:53.286 * DB saved on disk
+40:C 05 May 2020 09:31:53.289 * RDB: 0 MB of memory used by copy-on-write
+1:M 05 May 2020 09:31:53.392 * Background saving terminated with success
