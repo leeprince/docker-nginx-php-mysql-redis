@@ -211,3 +211,50 @@
 44:C 05 May 2020 09:31:53.289 * DB saved on disk
 44:C 05 May 2020 09:31:53.291 * RDB: 0 MB of memory used by copy-on-write
 1:S 05 May 2020 09:31:53.392 * Background saving terminated with success
+1:S 05 May 2020 10:41:27.465 # MASTER timeout: no data nor PING received...
+1:S 05 May 2020 10:41:27.481 # Connection with master lost.
+1:S 05 May 2020 10:41:27.495 * Caching the disconnected master state.
+1:S 05 May 2020 10:41:27.510 * Using the meaningful offset 33579 instead of 38717 to exclude the final PINGs (5138 bytes difference)
+1:S 05 May 2020 10:41:27.525 * Connecting to MASTER redis-m:6379
+1:S 05 May 2020 10:41:27.544 * MASTER <-> REPLICA sync started
+1:S 05 May 2020 10:41:27.560 * Non blocking connect for SYNC fired the event.
+1:S 05 May 2020 10:41:27.573 * Master replied to PING, replication can continue...
+1:S 05 May 2020 10:41:27.590 * Trying a partial resynchronization (request 946b77b12a82454e680ab567c845551602d8d11d:33580).
+1:S 05 May 2020 10:41:27.619 * Successful partial resynchronization with master.
+1:S 05 May 2020 10:41:27.634 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 05 May 2020 11:26:58.817 # Connection with master lost.
+1:S 05 May 2020 11:26:58.820 * Caching the disconnected master state.
+1:S 05 May 2020 11:26:58.824 * Using the meaningful offset 33579 instead of 38745 to exclude the final PINGs (5166 bytes difference)
+1:S 05 May 2020 11:26:59.223 * Connecting to MASTER redis-m:6379
+1:S 05 May 2020 11:26:59.225 * MASTER <-> REPLICA sync started
+1:S 05 May 2020 11:26:59.226 * Non blocking connect for SYNC fired the event.
+1:S 05 May 2020 11:26:59.228 * Master replied to PING, replication can continue...
+1:S 05 May 2020 11:26:59.230 * Trying a partial resynchronization (request 946b77b12a82454e680ab567c845551602d8d11d:33580).
+1:S 05 May 2020 11:26:59.234 * Successful partial resynchronization with master.
+1:S 05 May 2020 11:26:59.236 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 05 May 2020 12:05:02.246 # Connection with master lost.
+1:S 05 May 2020 12:05:02.247 * Caching the disconnected master state.
+1:S 05 May 2020 12:05:02.249 * Using the meaningful offset 33579 instead of 38829 to exclude the final PINGs (5250 bytes difference)
+1:S 05 May 2020 12:05:02.651 * Connecting to MASTER redis-m:6379
+1:S 05 May 2020 12:05:02.656 * MASTER <-> REPLICA sync started
+1:S 05 May 2020 12:05:02.658 * Non blocking connect for SYNC fired the event.
+1:S 05 May 2020 12:05:02.661 * Master replied to PING, replication can continue...
+1:S 05 May 2020 12:05:02.664 * Trying a partial resynchronization (request 946b77b12a82454e680ab567c845551602d8d11d:33580).
+1:S 05 May 2020 12:05:02.670 * Successful partial resynchronization with master.
+1:S 05 May 2020 12:05:02.672 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:S 05 May 2020 12:12:06.042 # Connection with master lost.
+1:S 05 May 2020 12:12:06.044 * Caching the disconnected master state.
+1:S 05 May 2020 12:12:06.045 * Using the meaningful offset 33579 instead of 38899 to exclude the final PINGs (5320 bytes difference)
+1:S 05 May 2020 12:12:06.441 * Connecting to MASTER redis-m:6379
+1:S 05 May 2020 12:12:06.445 * MASTER <-> REPLICA sync started
+1:S 05 May 2020 12:12:06.447 * Non blocking connect for SYNC fired the event.
+1:S 05 May 2020 12:12:06.450 * Master replied to PING, replication can continue...
+1:S 05 May 2020 12:12:06.455 * Trying a partial resynchronization (request 946b77b12a82454e680ab567c845551602d8d11d:33580).
+1:S 05 May 2020 12:12:06.462 * Successful partial resynchronization with master.
+1:S 05 May 2020 12:12:06.464 * MASTER <-> REPLICA sync: Master accepted a Partial Resynchronization.
+1:signal-handler (1588680752) Received SIGTERM scheduling shutdown...
+1:S 05 May 2020 12:12:32.496 # User requested shutdown...
+1:S 05 May 2020 12:12:32.499 * Saving the final RDB snapshot before exiting.
+1:S 05 May 2020 12:12:32.503 * DB saved on disk
+1:S 05 May 2020 12:12:32.506 * Removing the pid file.
+1:S 05 May 2020 12:12:32.508 # Redis is now ready to exit, bye bye...

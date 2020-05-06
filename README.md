@@ -80,4 +80,20 @@ docker run -d --privileged --network myNet -p 63792:6379 -v $PWD/slave02:/usr/lo
 
 
 #### mysql 
+```
+# 主
+docker run -d --network myNet -p 33070:3306 -v $PWD/master/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf -v $PWD/master/data:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=leeprince --name mysql-m mysql
+# 从
+docker run -d --network myNet -p 33071:3306 -v $PWD/slave01/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf -v $PWD/slave01/data:/var/lib/mysql/ -e MYSQL_ROOT_PASSWORD=leeprince --name mysql-s01 mysql
+
+# 用于主从复制的用户
+create user "slave"@"%" identified by "slave";
+
+# 授权
+grant all privileges on *.* to "slave"@"%" with grant option;
+
+# 刷新权限
+flush privileges;
+
+```
 

@@ -190,3 +190,42 @@
 40:C 05 May 2020 09:31:53.286 * DB saved on disk
 40:C 05 May 2020 09:31:53.289 * RDB: 0 MB of memory used by copy-on-write
 1:M 05 May 2020 09:31:53.392 * Background saving terminated with success
+1:M 05 May 2020 10:41:27.510 # Connection with replica 172.18.0.3:6379 lost.
+1:M 05 May 2020 10:41:27.602 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 10:41:27.612 * Partial resynchronization request from 172.18.0.3:6379 accepted. Sending 5138 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 10:41:28.205 # Disconnecting timedout replica: 172.18.0.4:6379
+1:M 05 May 2020 10:41:28.220 # Connection with replica 172.18.0.4:6379 lost.
+1:M 05 May 2020 10:41:28.349 * Replica 172.18.0.4:6379 asks for synchronization
+1:M 05 May 2020 10:41:28.359 * Partial resynchronization request from 172.18.0.4:6379 accepted. Sending 5138 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 11:26:58.810 # Disconnecting timedout replica: 172.18.0.3:6379
+1:M 05 May 2020 11:26:58.813 # Connection with replica 172.18.0.3:6379 lost.
+1:M 05 May 2020 11:26:58.816 # Disconnecting timedout replica: 172.18.0.4:6379
+1:M 05 May 2020 11:26:58.819 # Connection with replica 172.18.0.4:6379 lost.
+1:M 05 May 2020 11:26:58.928 * Replica 172.18.0.4:6379 asks for synchronization
+1:M 05 May 2020 11:26:58.930 * Partial resynchronization request from 172.18.0.4:6379 accepted. Sending 5180 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 11:26:59.232 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 11:26:59.234 * Partial resynchronization request from 172.18.0.3:6379 accepted. Sending 5180 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 12:05:02.234 # Disconnecting timedout replica: 172.18.0.4:6379
+1:M 05 May 2020 12:05:02.237 # Connection with replica 172.18.0.4:6379 lost.
+1:M 05 May 2020 12:05:02.240 # Disconnecting timedout replica: 172.18.0.3:6379
+1:M 05 May 2020 12:05:02.242 # Connection with replica 172.18.0.3:6379 lost.
+1:M 05 May 2020 12:05:02.356 * Replica 172.18.0.4:6379 asks for synchronization
+1:M 05 May 2020 12:05:02.359 * Partial resynchronization request from 172.18.0.4:6379 accepted. Sending 5250 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 12:05:02.667 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 12:05:02.669 * Partial resynchronization request from 172.18.0.3:6379 accepted. Sending 5250 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 12:12:06.034 # Disconnecting timedout replica: 172.18.0.4:6379
+1:M 05 May 2020 12:12:06.036 # Connection with replica 172.18.0.4:6379 lost.
+1:M 05 May 2020 12:12:06.037 # Disconnecting timedout replica: 172.18.0.3:6379
+1:M 05 May 2020 12:12:06.040 # Connection with replica 172.18.0.3:6379 lost.
+1:M 05 May 2020 12:12:06.157 * Replica 172.18.0.4:6379 asks for synchronization
+1:M 05 May 2020 12:12:06.160 * Partial resynchronization request from 172.18.0.4:6379 accepted. Sending 5320 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 12:12:06.459 * Replica 172.18.0.3:6379 asks for synchronization
+1:M 05 May 2020 12:12:06.462 * Partial resynchronization request from 172.18.0.3:6379 accepted. Sending 5320 bytes of backlog starting from offset 33580.
+1:M 05 May 2020 12:12:31.090 # Connection with replica 172.18.0.4:6379 lost.
+1:M 05 May 2020 12:12:32.512 # Connection with replica 172.18.0.3:6379 lost.
+1:signal-handler (1588680753) Received SIGTERM scheduling shutdown...
+1:M 05 May 2020 12:12:33.405 # User requested shutdown...
+1:M 05 May 2020 12:12:33.407 * Saving the final RDB snapshot before exiting.
+1:M 05 May 2020 12:12:33.412 * DB saved on disk
+1:M 05 May 2020 12:12:33.414 * Removing the pid file.
+1:M 05 May 2020 12:12:33.416 # Redis is now ready to exit, bye bye...
