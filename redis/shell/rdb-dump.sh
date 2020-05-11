@@ -1,7 +1,7 @@
 #!/bin/sh
 
 :<<princeComment
-todo:
+todo: RDB 备份
     1. 创建备份的路径
     2. 重新生成备份
     3. 检查备份是否完成

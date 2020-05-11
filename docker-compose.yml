@@ -1,0 +1,40 @@
+version: "3.3"
+services:
+  nginx-compose:
+      image: leeprince/nginx
+      stdin_open: true
+      tty: true
+      depends_on:
+        - php-compose
+      volumes:
+        - ./nginx/conf/conf.d/:/etc/nginx/conf.d/
+        - ./nginx/html/:/usr/share/nginx/html/
+        - ./nginx/logs/:/var/log/nginx/
+      networks:
+        - myNetCompose
+  php-compose:
+      image: leeprince/php:7.4.5-fpm-alpine-redis-swoole
+      stdin_open: true
+      tty: true
+      volumes:
+        - ./php/conf/php.ini:/usr/local/etc/php/php.ini
+        - ./php/html/:/var/www/html/
+      networks:
+        - myNetCompose
+
+
+
+#  mysql-compose:
+#      image: leeprince/mysql
+#
+#  redis-compose:
+#      image: leeprince/redis
+
+
+networks:
+  myNetCompose:
+#    external: true # ERROR: Network myNetCompose declared as external, but could not be found. Please create the network manually using `docker network create myNetCompose` and try again.
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/24
