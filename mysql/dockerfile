@@ -2,12 +2,12 @@ FROM mysql
 
 MAINTAINER leeprince@foxmail.com
 
-ENV MYSQL_ROOT_PASSWORD=leeprince
+ENV MYSQL_ROOT_PASSWORD=password
 
 # 自定义配置文件路径：/etc/mysql/conf.d/*.cnf
 VOLUME ["/var/lib/mysql"]
 
 WORKDIR /var/lib/mysql
 
-EXPOSE 33060
+EXPOSE 3306
 

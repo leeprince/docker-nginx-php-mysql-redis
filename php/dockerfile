@@ -5,7 +5,6 @@ MAINTAINER leeprince@foxmail.com
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
     && apk add \
         autoconf g++ make \
-        git \
         openssl-dev
 
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
@@ -17,12 +16,12 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
     && pecl install swoole && docker-php-ext-enable swoole
 
 # Composer
-RUN curl -sS https://getcomposer.org/installer | php \
-    && mv composer.phar /usr/local/bin/composer \
-    && composer self-update --clean-backups
+# RUN curl -sS https://getcomposer.org/installer | php \
+#     && mv composer.phar /usr/local/bin/composer \r
+#     && composer self-update --clean-backups
 
 # 全局配置 composer 镜像地址
-RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+# RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 
 # $PHP_INI_DIR = /usr/local/etc/php
 VOLUME ["/var/www/html"]

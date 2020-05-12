@@ -1,5 +1,9 @@
-FROM nginx:1.17.8-alpine
+FROM nginx
+
+MAINTAINER leeprince@foxmail.com
 
 VOLUME ["/etc/nginx/conf.d/", "/usr/share/nginx/html/", "/var/log/nginx/"]
+
+EXPOSE 80 443
 
 WORKDIR /etc/nginx
