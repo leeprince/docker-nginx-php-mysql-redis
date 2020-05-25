@@ -65,5 +65,7 @@ class Worker
         $http_resonse .= "Content-length: ".strlen($content)."\r\n\r\n";
         $http_resonse .= $content;
         fwrite($fd, $http_resonse);
+        
+        // fclose($fd); // 返回响应后直接关闭文件描述符。直接关闭后可以支持多个非长连接。否则只能支持单个长连接连接。补充：实际业务中每个客户端我们都希望保持连接，以便建议连接后继续请求
     }
 }

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20779899-9bb0-4c6f-a29f-d76f9805419d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx/Worker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/sentinel/sentinel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx-v2/WorkerEpoll.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx-v2/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/myNginx/myNginx/Worker.php" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx-v1/Worker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/myNginx/myNginx/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/myNginx/myNginx-v1/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,19 +17,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx/Worker.php">
+        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v2/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+            <state relative-caret-position="199">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx/index.php">
+        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v1/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+            <state relative-caret-position="95">
+              <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v1/Worker.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v2/WorkerEpoll.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="599">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -113,13 +132,17 @@
         <option value="$PROJECT_DIR$/nginx/myNginx/workerman.php" />
         <option value="$PROJECT_DIR$/nginx/myNginx/myNginx/index.php" />
         <option value="$PROJECT_DIR$/nginx/myNginx/myNginx/Worker.php" />
+        <option value="$PROJECT_DIR$/nginx/myNginx/myNginx-v2/index.php" />
+        <option value="$PROJECT_DIR$/nginx/myNginx/myNginx-v2/WorkerEpoll.php" />
+        <option value="$PROJECT_DIR$/nginx/myNginx/myNginx-v1/Worker.php" />
+        <option value="$PROJECT_DIR$/nginx/myNginx/myNginx-v1/index.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="x" value="894" />
-    <option name="width" value="786" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="364" />
+    <option name="width" value="1667" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -146,6 +169,20 @@
               <item name="docker" type="462c0819:PsiDirectoryNode" />
               <item name="nginx" type="462c0819:PsiDirectoryNode" />
               <item name="myNginx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="myNginx" type="462c0819:PsiDirectoryNode" />
+              <item name="myNginx-v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx" type="462c0819:PsiDirectoryNode" />
+              <item name="myNginx" type="462c0819:PsiDirectoryNode" />
+              <item name="myNginx-v2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,11 +216,11 @@
       <recent name="$PROJECT_DIR$/redis/conf" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nginx/myNginx" />
       <recent name="$PROJECT_DIR$/nginx/myNginx/myNginx" />
       <recent name="$PROJECT_DIR$/mysql/master/conf" />
       <recent name="$PROJECT_DIR$/mysql" />
       <recent name="$PROJECT_DIR$/redis/monitor" />
-      <recent name="$PROJECT_DIR$/redis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,17 +268,17 @@
       <workItem from="1589524210904" duration="1800000" />
       <workItem from="1589869841337" duration="787000" />
       <workItem from="1589940201800" duration="285000" />
-      <workItem from="1590321039630" duration="5398000" />
+      <workItem from="1590321039630" duration="15892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145859000" />
+    <option name="totallyTimeSpent" value="156353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="894" y="0" width="786" height="1050" extended-state="6" />
+    <frame x="0" y="364" width="1667" height="686" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74358976" visible="true" weight="0.47446236" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74358976" visible="true" weight="0.35753846" />
       <window_info id="Structure" order="1" sideWeight="0.25641027" side_tool="true" weight="0.1563786" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -259,7 +296,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49957734" weight="0.32714286" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.39081633" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.540404" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50042266" side_tool="true" weight="0.32714286" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24952015" />
@@ -274,6 +311,40 @@
       <window_info anchor="right" id="Palette&#9;" order="10" />
       <window_info anchor="right" id="Theme Preview" order="11" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.74358976" weight="0.38844085" />
+      <window_info id="Structure" order="1" sideWeight="0.25641027" side_tool="true" weight="0.1563786" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="UI Designer" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32957393" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49957734" weight="0.32714286" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5173469" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50042266" side_tool="true" weight="0.32714286" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24952015" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="aiXcoder" order="3" />
+      <window_info anchor="right" id="Word Book" order="4" side_tool="true" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Remote Host" order="6" weight="0.21821757" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Palette" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -283,9 +354,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/nginx/t" />
-    <entry file="file://$PROJECT_DIR$/nginx/t2" />
-    <entry file="file://$PROJECT_DIR$/nginx/Centos-7.repo" />
     <entry file="file://$PROJECT_DIR$/nginx/bak_dockerfile" />
     <entry file="file://$PROJECT_DIR$/nginx/html/50x.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -530,17 +598,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx/Worker.php">
+    <entry file="file:///usr/local/Cellar/php/7.4.1/share/php/pear/PEAR/REST.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        <state relative-caret-position="31">
+          <caret line="180" selection-start-line="180" selection-end-line="180" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx/index.php">
+    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v2/WorkerEpoll.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        <state relative-caret-position="599">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v2/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v1/Worker.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="67" column="8" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/myNginx/myNginx-v1/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
