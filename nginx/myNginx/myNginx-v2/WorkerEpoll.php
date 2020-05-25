@@ -37,7 +37,7 @@ class WorkerEpoll
      */
     public function listen()
     {
-        // 添加一个 socket 到 epoll 监听列表当中
+        // 添加一个 socket 到 epoll 监听列表当中; swoole_event_add 是 swoole 面向过程函数；Swoole\Event::add 是面向对象方法
         swoole_event_add($this->_mainSocket, function ($fd) {
             // var_dump($fd);
             $clientSocket = stream_socket_accept($this->_mainSocket);

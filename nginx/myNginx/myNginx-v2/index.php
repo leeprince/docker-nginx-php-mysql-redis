@@ -14,7 +14,7 @@ $worker->onMessage = function ($fd, $connection, $request) {
     // var_dump($request);
     
     /** 开始写业务逻辑 */
-    $connection->response($fd, "利用 swoole 的 event 实现一个 IO 复用网络模型"); // 响应客户端
+    $connection->response($fd, "利用 swoole 的 event 实现一个单进程 IO 复用网络模型"); // 响应客户端
 };
 
 // 启动服务
@@ -22,7 +22,7 @@ $worker->runAll();
 
 
 /**
- * 压力测试：ab -n10 -c10 -k http://127.0.0.1:9002/index.php
+ * 压力测试：ab -n10000 -c1000 -k http://127.0.0.1:9002/index.php
  */
 
 
