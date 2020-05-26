@@ -5,10 +5,12 @@
  * @Author  leeprince:2020-05-24 20:19
  */
 
-class WorkerEpoll
+class WorkerPcntl
 {
+    public  $addr; // socket 地址：协议+ip+端口
     public  $onMessage; // 绑定一个消息触发的事件回调
     private $_mainSocket; // 保存 socket 服务端资源
+    public $workNum; // worker 进程数量
     
     /**
      * Worker constructor. 初始化：创建 socket  -> 绑定服务器的协议 + IP + 端口 -> 监听端口
@@ -17,7 +19,7 @@ class WorkerEpoll
      */
     public function __construct($addr)
     {
-        $this->_mainSocket = stream_socket_server($addr); // 代替了原生的三步骤： socket_create();->socker_bind();->socker_listen();
+        $this->addr = $addr;
     }
     
     /**
@@ -27,7 +29,29 @@ class WorkerEpoll
      */
     public function runAll()
     {
-        $this->listen();
+        for ($i = 0; $i < $this->workNum; $i++) {
+            $pid = pcntl_fork();
+            if ($pid < 0) {
+                exit('子进程创建失败');
+            } else if ($pid == 0) {
+                // 子进程空间; 虽然在同一个文件但是不同的子进程或者父进程拥有不同的内存
+                /** 注意：
+                 * 回收子进程，防止出现僵尸进程
+                 * 父进程结束了， 但是子进程还在运行，则子进程成为孤儿进程
+                 */
+                // sleep(1);
+                // var_dump('子进程打印：'.$pid);
+                $this->listen();
+                exit; // 结束子进程，继续执行，防止循环嵌套创建子进程
+            } else {
+                // 父进程空间; 父进程空间返回子进程ID
+                var_dump('父进程得到子进程ID：'.$pid);
+            }
+        }
+        for ($i = 0; $i < $this->workNum; $i++) {
+            $pid = pcntl_wait($status, WUNTRACED);
+            // var_dump('回收子进程ID:'.$pid);
+        }
     }
     
     /**
@@ -37,6 +61,15 @@ class WorkerEpoll
      */
     public function listen()
     {
+        $content = stream_context_create([
+          'socket'  => [
+              'backlog' => 10000,
+              'so_reuseport' => true, // 允许多进程监听同一个端口
+          ]
+        ]);
+        // 代替了原生的三步骤： socket_create();->socker_bind();->socker_listen();
+        $this->_mainSocket = stream_socket_server($this->addr,$errno,$errstr,STREAM_SERVER_BIND | STREAM_SERVER_LISTEN, $content);
+        
         // 添加一个 socket 到 epoll 监听列表当中; swoole_event_add 是 swoole 面向过程函数；Swoole\Event::add 是面向对象方法
         swoole_event_add($this->_mainSocket, function ($fd) {
             // var_dump($fd);
