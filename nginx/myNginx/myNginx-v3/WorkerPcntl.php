@@ -42,7 +42,7 @@ class WorkerPcntl
                 // sleep(1);
                 // var_dump('子进程打印：'.$pid);
                 $this->listen();
-                exit; // 结束子进程，继续执行，防止循环嵌套创建子进程
+                exit; // 停止继续执行，防止循环嵌套创建子进程
             } else {
                 // 父进程空间; 父进程空间返回子进程ID
                 var_dump('父进程得到子进程ID：'.$pid);

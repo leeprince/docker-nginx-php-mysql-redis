@@ -37,12 +37,12 @@ class WorkerEpoll
      */
     public function listen()
     {
-        // 添加一个 socket 到 epoll 监听列表当中; swoole_event_add 是 swoole 面向过程函数；Swoole\Event::add 是面向对象方法
+        // 监听服务端 socket: 添加一个 socket 到 epoll 监听列表当中; swoole_event_add 是 swoole 面向过程函数；Swoole\Event::add 是面向对象方法
         swoole_event_add($this->_mainSocket, function ($fd) {
             // var_dump($fd);
             $clientSocket = stream_socket_accept($this->_mainSocket);
     
-            // 添加一个 socket 到 epoll 监听列表当中, 当 socket 状态发生改变的时候执行事件回调
+            // 监听客户端 socket: 添加一个 socket 到 epoll 监听列表当中, 当 socket 状态发生改变的时候执行事件回调
             swoole_event_add($clientSocket, function ($fd) {
                 // 检查连接是否关闭
                 if (feof($fd) || !is_resource($fd)) {
