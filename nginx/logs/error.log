@@ -12,3 +12,49 @@
 2020/04/27 23:15:40 [error] 6#0: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8000"
 2020/04/27 23:23:03 [error] 6#0: *4 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8000"
 2020/04/27 23:24:01 [error] 6#0: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: localhost, request: "GET /index.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8000"
+2020/05/27 13:22:35 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32
+2020/05/27 13:22:39 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32
+2020/05/27 13:26:38 [error] 6#6: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /favicon.ico HTTP/1.1", host: "pd.test.com:8000", referrer: "http://pd.test.com:8000/"
+2020/05/27 13:35:30 [error] 6#6: *1 open() "//usr/share/nginx/html/index.html/test" failed (20: Not a directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:36:20 [error] 6#6: *1 open() "//usr/share/nginx/html/test" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:36:21 [error] 6#6: *1 open() "//usr/share/nginx/html/test" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:36:26 [error] 6#6: *1 open() "//usr/share/nginx/html/test" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:36:32 [error] 6#6: *1 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:36:34 [error] 6#6: *1 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:37:40 [error] 7#7: *2 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:37:42 [error] 7#7: *2 open() "/usr/share/nginx/html/test/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:37:47 [error] 7#7: *2 open() "/usr/share/nginx/html/test" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:37:51 [error] 7#7: *2 "/usr/share/nginx/html/test/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:41:40 [error] 7#7: *1 "/etc/nginx/html/test/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:41:45 [error] 7#7: *1 "/etc/nginx/html/test/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 13:42:27 [error] 6#6: *1 "/etc/nginx/html/test/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /test/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:14:39 [error] 6#6: *5 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /favicon.ico HTTP/1.1", host: "pd.test.com:8000", referrer: "http://pd.test.com:8000/test"
+2020/05/27 14:23:36 [error] 6#6: *20 "/usr/share/nginx/html/alias/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:23:38 [error] 6#6: *20 open() "/usr/share/nginx/html/alias" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:23:43 [error] 6#6: *20 open() "/usr/share/nginx/html/alias/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:24:37 [error] 6#6: *20 open() "/usr/share/nginx/html/alias/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:24:41 [error] 6#6: *20 open() "/usr/share/nginx/html/alias" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:24:43 [error] 6#6: *20 "/usr/share/nginx/html/alias/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:27:03 [error] 6#6: *7 "/usr/share/nginx/html/file/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/ HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:27:10 [error] 6#6: *7 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:28:17 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:28:17 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:28:58 [error] 6#6: *9 open() "/usr/share/nginx/html/index.htm" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/index.htm HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:29:00 [error] 6#6: *9 open() "/usr/share/nginx/html/index.htm;" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /alias/index.htm; HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:29:06 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:29:06 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:29:56 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:30:07 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:30:07 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:31:12 [error] 6#6: *9 open() "/usr/share/nginx/html/file" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:31:16 [error] 6#6: *9 open() "/usr/share/nginx/html/file/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /file/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:31:44 [error] 6#6: *9 open() "/usr/share/nginx/html/html/index.html" failed (2: No such file or directory), client: 172.18.0.1, server: pd.test.com, request: "GET /html/index.html HTTP/1.1", host: "pd.test.com:8000"
+2020/05/27 14:39:31 [emerg] 1#1: duplicate location "/test" in /etc/nginx/conf.d/pd.test.com.conf:22
+2020/05/27 14:39:41 [emerg] 1#1: duplicate location "/test" in /etc/nginx/conf.d/pd.test.com.conf:22
+2020/08/03 04:00:08 [emerg] 1#1: a duplicate default server for 0.0.0.0:80 in /etc/nginx/conf.d/pd.optimizer.com.conf:2
+2020/08/03 04:00:15 [emerg] 1#1: a duplicate default server for 0.0.0.0:80 in /etc/nginx/conf.d/pd.optimizer.com.conf:2
+2020/08/03 04:01:59 [emerg] 1#1: a duplicate default server for 0.0.0.0:80 in /etc/nginx/conf.d/pd.optimizer.com.conf:2
+2020/08/03 05:34:24 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32
+2020/08/03 05:34:46 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32
+2020/08/03 05:34:57 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32
+2020/08/03 05:35:00 [emerg] 1#1: host not found in upstream "php" in /etc/nginx/conf.d/default.conf:32

@@ -51,9 +51,13 @@ foreach ($data as $item) {
 
 // 回收子进程: 创建多少进程即回收多少次
 foreach ($data as $v) {
-    // 安装一个信号处理器。信号编号查看：kill -l
+    // nginx -s reload 重启 worker 进程
+    // 安装一个信号处理器：pcntl_signal()。信号编号查看：kill -l
     pcntl_signal(2, function ($signo) {
         var_dump('信号编号：'.$signo);
+        // php: 杀死进程 posix_kill();
+        // posix_kill(工作进程)
+        // 重新拉起工作进程
     });
     
     $pid = pcntl_wait($status, WUNTRACED);

@@ -32,7 +32,7 @@ services: # 包含的服务
       networks:
         - myNetCompose
       ports:
-        - 9001:9000
+        - 9000:9000
 
   mysql-m:
       image: leeprince/mysql

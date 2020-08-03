@@ -49,6 +49,15 @@ class WorkerPcntl
             }
         }
         for ($i = 0; $i < $this->workNum; $i++) {
+            // nginx -s reload 重启 worker 进程
+            // 安装一个信号处理器：pcntl_signal()。信号编号查看：kill -l
+            pcntl_signal(2, function ($signo) {
+                var_dump('信号编号：'.$signo);
+                // php: 杀死进程 posix_kill();
+                // posix_kill(工作进程)
+                // 重新拉起工作进程：for ($i = 0; $i < $this->workNum; $i++) {...}
+            });
+            
             $pid = pcntl_wait($status, WUNTRACED);
             // var_dump('回收子进程ID:'.$pid);
         }
