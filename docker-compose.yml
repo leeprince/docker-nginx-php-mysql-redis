@@ -9,6 +9,7 @@ services: # 包含的服务
       container_name: nginx # 指定自定义容器名称，而不是生成的默认名称。
       stdin_open: true # 打开标准输入
       tty: true # 模拟一个伪终端
+      #restart: always
       depends_on: # 设置依赖关系
         - php
       volumes: # 挂载主机路径或命名卷，指定为服务的子选项。您可以将主机路径作为单个服务定义的一部分挂载，并且不需要在顶级结果中定义 「volumes」键名
@@ -26,6 +27,7 @@ services: # 包含的服务
       container_name: php
       stdin_open: true
       tty: true
+      #restart: always
       volumes:
         - ./php/conf/php.ini:/usr/local/etc/php/php.ini
         - ./php/html/:/var/www/html/
@@ -39,6 +41,7 @@ services: # 包含的服务
       container_name: mysql-m
       stdin_open: true
       tty: true
+      #restart: always
       volumes:
         - ./mysql/master/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
         - ./mysql/master/data/:/var/lib/mysql/
@@ -51,6 +54,7 @@ services: # 包含的服务
       container_name: mysql-s1
       stdin_open: true
       tty: true
+      #restart: always
       volumes:
         - ./mysql/slave01/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
         - ./mysql/slave01/data/:/var/lib/mysql/
@@ -64,6 +68,7 @@ services: # 包含的服务
       container_name: redis-m
       stdin_open: true
       tty: true
+      #restart: always
       volumes:
         - ./redis/master/:/usr/local/etc/redis/
       networks:
@@ -76,6 +81,7 @@ services: # 包含的服务
       container_name: redis-s1
       stdin_open: true
       tty: true
+      #restart: always
       volumes:
         - ./redis/slave01/:/usr/local/etc/redis/
       networks:
@@ -86,8 +92,12 @@ services: # 包含的服务
 
 networks: # 创建网络配置
   myNetCompose: # 自定义网络名
-#    external: true # ERROR: Network myNetCompose declared as external, but could not be found. Please create the network manually using `docker network create myNetCompose` and try again.
+    #external: true # ERROR: Network myNetCompose declared as external, but could not be found. Please create the network manually using `docker network create myNetCompose` and try again.
     ipam:
       driver: default
       config:
         - subnet: 172.18.0.0/24
+  # 定义一个外部存在的 network
+  # networks:
+  # docker_default:
+  #   external: true
