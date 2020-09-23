@@ -97,7 +97,7 @@ networks: # 创建网络配置
       driver: default
       config:
         - subnet: 172.18.0.0/24
-  # 定义一个外部存在的 network
-  # networks:
-  # docker_default:
-  #   external: true
+# 定义一个外部存在的 network
+# networks:
+#   docker_default:
+#     external: true
