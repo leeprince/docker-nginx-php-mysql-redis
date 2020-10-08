@@ -12,6 +12,8 @@ services: # 包含的服务
       #restart: always
       depends_on: # 设置依赖关系
         - php
+        # - mysql
+        # - redis
       volumes: # 挂载主机路径或命名卷，指定为服务的子选项。您可以将主机路径作为单个服务定义的一部分挂载，并且不需要在顶级结果中定义 「volumes」键名
         - ./nginx/conf/nginx.conf:/etc/nginx/nginx.conf
         - ./nginx/conf/conf.d/:/etc/nginx/conf.d/
@@ -91,13 +93,12 @@ services: # 包含的服务
       privileged: true
 
 networks: # 创建网络配置
-  myNetCompose: # 自定义网络名
-    #external: true # ERROR: Network myNetCompose declared as external, but could not be found. Please create the network manually using `docker network create myNetCompose` and try again.
+  myNetCompose: # 自定义网络名，无需外部网络（docker network list）中存在
     ipam:
       driver: default
       config:
         - subnet: 172.18.0.0/24
 # 定义一个外部存在的 network
 # networks:
-#   docker_default:
+#   docker_default: # 外部已存在的网络名：docker network list 存在的列表；# 如果外部不存在的网络名（docker network list ）则会报错ERROR: Network myNetCompose declared as external, but could not be found. Please create the network manually using `docker network create myNetCompose` and try again.
 #     external: true
