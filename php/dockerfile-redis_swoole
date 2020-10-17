@@ -1,4 +1,4 @@
-############## dockerfile-redis_swoole_mongodb #######################
+############## dockerfile-redis_swoole #######################
 
 FROM php:7.4.5-fpm-alpine
 
@@ -16,8 +16,7 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
         pdo_mysql \
         sockets \
     && pecl install redis && docker-php-ext-enable redis \
-    && pecl install swoole && docker-php-ext-enable swoole \
-    && pecl install mongodb && docker-php-ext-enable mongodb
+    && pecl install swoole && docker-php-ext-enable swoole
 
 # Composer
 # RUN curl -sS https://getcomposer.org/installer | php \
