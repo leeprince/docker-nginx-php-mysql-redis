@@ -10,20 +10,20 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
   && apk add gcc g++ autoconf libc-dev wget vim openssl-dev make linux-headers \
   && rm -rf /var/cache/apk/*
 
-RUN mkdir -p /usr/src/redis \
-    && mkdir -p /usr/src/redis/data \
-    && mkdir -p /var/log/redis
+RUN mkdir -p /usr/local/etc/redis \
+    && mkdir -p /usr/local/etc/redis/data \
+    && mkdir -p /usr/local/etc/redis/log
 
 RUN mkdir -p /tmp/redis \
     && wget -O /tmp/redis/$REDIS_VERSION.tar.gz http://download.redis.io/releases/$REDIS_VERSION.tar.gz \
-    && tar -xzf /tmp/redis/$REDIS_VERSION.tar.gz -C /usr/src/redis
+    && tar -xzf /tmp/redis/$REDIS_VERSION.tar.gz -C /usr/local/etc/redis
 
-RUN cd /usr/src/redis/$REDIS_VERSION && make && make PREFIX=/usr/local/redis install \
-    && ln -s /usr/local/redis/bin/* /usr/local/bin/ \
+RUN cd /usr/src/redis/$REDIS_VERSION && make && make PREFIX=/usr/local/etc/redis install \
+    && ln -s /usr/local/etc/redis/bin/* /usr/local/bin/ \
     && rm -f /tmp/redis/$REDIS_VERSION.tar.gz
 
-VOLUME ["/usr/src/redis/data"]
+VOLUME ["/usr/local/etc/redis/data"]
 
 EXPOSE 6379
 
-CMD ["/usr/local/bin/redis-server"]
+CMD ["/usr/local/bin/redis-server", "/usr/local/etc/redis/conf/redis.conf"]

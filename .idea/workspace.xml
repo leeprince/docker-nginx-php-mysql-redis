@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20779899-9bb0-4c6f-a29f-d76f9805419d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose-nginx_php_mysql_redis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/dockerfile-redis_bash" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/shell/cluster.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redis/shell/redis-trib.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/conf/主从配置修改说明" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose-mysqlCluster_redisCluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose-nginx_php_mysqlCluster_redisCluster.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/php/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/conf/优化主从节点配置说明.conf" beforeDir="false" afterPath="$PROJECT_DIR$/redis/conf/优化主从节点配置说明.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/redis/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/base.dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/redis/base.dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/master/conf/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/redis/master/conf/redis.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,20 +15,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/redis/dockerfile">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/base.dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+            <state relative-caret-position="261">
+              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose-nginx_php_mysql_redis.yml">
+        <entry file="file://$PROJECT_DIR$/redis/master/conf/redis.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+            <state relative-caret-position="189">
+              <caret line="368" column="11" selection-start-line="368" selection-start-column="2" selection-end-line="368" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/conf/优化主从节点配置说明.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redis/conf/主从配置修改说明">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/slave01/conf/redis.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="1170" column="2" lean-forward="true" selection-start-line="1170" selection-start-column="2" selection-end-line="1170" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -42,16 +64,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>log</find>
-      <find>read-on</find>
-      <find>data</find>
-      <find>logfile</find>
-      <find>logf</find>
-      <find>protec</find>
-      <find>protected</find>
-      <find>dir</find>
-      <find>cluster</find>
-      <find>masterau</find>
       <find>\n</find>
       <find>auth</find>
       <find>$configPath</find>
@@ -66,12 +78,22 @@
       <find>password</find>
       <find>name</find>
       <find>protected-mode</find>
-      <find>master</find>
       <find>require</find>
       <find>requirepass</find>
       <find>soo</find>
       <find>swoole</find>
       <find>#restart: always</find>
+      <find>cluster-announce-ip</find>
+      <find>log</find>
+      <find>logfile</find>
+      <find>protected</find>
+      <find>dir</find>
+      <find>logf</find>
+      <find>req</find>
+      <find>master</find>
+      <find>masterau</find>
+      <find>replicaof</find>
+      <find>cluster</find>
     </findStrings>
     <replaceStrings>
       <replace>conf</replace>
@@ -85,8 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nginx/dockerfile.bak" />
-        <option value="$PROJECT_DIR$/nginx/README.md" />
         <option value="$PROJECT_DIR$/nginx/bak_dockerfile" />
         <option value="$PROJECT_DIR$/nginx/dockerfiledir/dockerfile" />
         <option value="$PROJECT_DIR$/nginx/conf/nginx.conf.bak" />
@@ -94,7 +114,6 @@
         <option value="$PROJECT_DIR$/php/conf/php.ini.bak" />
         <option value="$PROJECT_DIR$/php/conf/www.conf" />
         <option value="$PROJECT_DIR$/redis/slave01/conf/redis.conf" />
-        <option value="$PROJECT_DIR$/redis/master/conf/redis.conf" />
         <option value="$PROJECT_DIR$/redis/monitor/redisRead.php" />
         <option value="$PROJECT_DIR$/redis/monitor/redisDataConfig.php" />
         <option value="$PROJECT_DIR$/redis/monitor/redisHostMap.php" />
@@ -107,7 +126,6 @@
         <option value="$PROJECT_DIR$/nginx/conf/nginx.conf" />
         <option value="$PROJECT_DIR$/mysql/dockerfile" />
         <option value="$PROJECT_DIR$/nginx/dockerfile" />
-        <option value="$PROJECT_DIR$/redis/conf/redis.conf" />
         <option value="$PROJECT_DIR$/nginx/html/index.php" />
         <option value="$PROJECT_DIR$/php/html/index.php" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -136,14 +154,18 @@
         <option value="$PROJECT_DIR$/docker-compose-nginx_php_mysqlCluster_redisCluster.yml" />
         <option value="$PROJECT_DIR$/docker-compose-nginx_php_mysql_redis.yml" />
         <option value="$PROJECT_DIR$/redis/dockerfile" />
+        <option value="$PROJECT_DIR$/redis/conf/redis.conf" />
+        <option value="$PROJECT_DIR$/redis/master/conf/redis.conf" />
+        <option value="$PROJECT_DIR$/redis/base.dockerfile" />
+        <option value="$PROJECT_DIR$/redis/conf/主从配置修改说明" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="155" />
-    <option name="y" value="83" />
-    <option name="width" value="1494" />
-    <option name="height" value="955" />
+    <option name="x" value="170" />
+    <option name="y" value="142" />
+    <option name="width" value="1493" />
+    <option name="height" value="861" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -160,11 +182,6 @@
             <path>
               <item name="docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker" type="b2602c69:ProjectViewProjectNode" />
@@ -187,13 +204,34 @@
               <item name="docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
-              <item name="shell" type="462c0819:PsiDirectoryNode" />
+              <item name="master" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker" type="b2602c69:ProjectViewProjectNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
               <item name="redis" type="462c0819:PsiDirectoryNode" />
               <item name="slave01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="slave01" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="slave02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
+              <item name="slave02" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,18 +322,18 @@
       <workItem from="1596219762100" duration="25000" />
       <workItem from="1596219791657" duration="68000" />
       <workItem from="1598931940556" duration="16000" />
-      <workItem from="1602935045130" duration="11674000" />
+      <workItem from="1602935045130" duration="15322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187676000" />
+    <option name="totallyTimeSpent" value="191324000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="155" y="83" width="1494" height="955" extended-state="0" />
+    <frame x="170" y="142" width="1493" height="861" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74358976" visible="true" weight="0.303719" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.74358976" visible="true" weight="0.30392832" />
       <window_info id="Structure" order="1" sideWeight="0.25641027" side_tool="true" weight="0.1563786" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -313,7 +351,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49957734" weight="0.32714286" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.4632353" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.46293887" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50042266" side_tool="true" weight="0.32714286" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24952015" />
@@ -371,27 +409,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/redis/monitor/redisRead.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/monitor/hostMap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/conf/redis.conf.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="1773" column="27" lean-forward="true" selection-end-line="1782" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nginx/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-78" />
@@ -531,13 +548,6 @@
     <entry file="file://$PROJECT_DIR$/redis/conf/AOF 常用配置说明.conf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/redis/conf/redis.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="163" column="21" lean-forward="true" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/monitor/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -562,27 +572,6 @@
           <folding>
             <element signature="e#6#185#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/sentinel/sentinel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/slave02/conf/redis.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="769" column="11" selection-start-line="769" selection-end-line="769" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/master/conf/redis.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="761" column="30" lean-forward="true" selection-start-line="761" selection-start-column="30" selection-end-line="761" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -641,38 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-nginx_php_mysqlCluster_redisCluster.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/conf/优化主从节点配置说明.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redis/shell/rdb-dump.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/redis/base.dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-nginx_php_mysql_redis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -683,10 +644,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-nginx_php_mysqlCluster_redisCluster.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="86" column="14" lean-forward="true" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/shell/cluster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/sentinel/sentinel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/redis/dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="63" lean-forward="true" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+        <state relative-caret-position="182">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose-nginx_php_mysql_redis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="89" column="22" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/slave02/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="239" column="10" lean-forward="true" selection-start-line="239" selection-start-column="10" selection-end-line="239" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/conf/优化主从节点配置说明.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/base.dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/master/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="368" column="11" selection-start-line="368" selection-start-column="2" selection-end-line="368" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/slave01/conf/redis.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="1170" column="2" lean-forward="true" selection-start-line="1170" selection-start-column="2" selection-end-line="1170" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/conf/主从配置修改说明">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
         </state>
       </provider>
     </entry>
