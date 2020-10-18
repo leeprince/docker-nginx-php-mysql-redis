@@ -1,10 +1,16 @@
 FROM redis
 
-RUN mkdir -p /usr/local/etc/redis/conf/ && mkdir -p /usr/local/etc/redis/log/ \
+RUN mkdir -p /usr/local/etc/redis/conf/ \
+    && mkdir -p /usr/local/etc/redis/log/ \
+    && mkdir -p /usr/local/etc/redis/shell/ \
     && chown -R redis:redis /usr/local/etc/redis/
 
-COPY ./conf/redis.conf /usr/local/etc/redis/conf/redis.conf
+RUN COPY ./conf/redis.conf /usr/local/etc/redis/conf/redis.conf \
+    && COPY ./shell/cluster.sh /usr/local/etc/redis/shell/ \
+    && COPY ./redis/sh/redis-trib.rb /usr/local/etc/redis/shell/ \
+    && chmod +x usr/local/etc/redis/shell/cluster.sh \
+    && chmod +x usr/local/etc/redis/shell/redis-trib.rb
 
-VOLUME ["/data"]
+VOLUME ["/usr/local/etc/redis/conf", "/data"]
 
-CMD [ "redis-server", "/usr/local/etc/redis/conf/redis.conf"]
+# CMD [ "redis-server", "/usr/local/etc/redis/conf/redis.conf"]

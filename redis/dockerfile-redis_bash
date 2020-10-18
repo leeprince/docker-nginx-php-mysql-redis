@@ -1,0 +1,10 @@
+FROM redis
+
+RUN mkdir -p /usr/local/etc/redis/conf/ && mkdir -p /usr/local/etc/redis/log/ \
+    && chown -R redis:redis /usr/local/etc/redis/
+
+COPY ./conf/redis.conf /usr/local/etc/redis/conf/redis.conf
+
+VOLUME ["/data"]
+
+CMD [ "redis-server", "/usr/local/etc/redis/conf/redis.conf"]

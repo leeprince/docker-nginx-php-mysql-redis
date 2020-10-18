@@ -9,7 +9,7 @@ services: # 包含的服务
       container_name: nginx # 指定自定义容器名称，而不是生成的默认名称。
       stdin_open: true # 打开标准输入
       tty: true # 模拟一个伪终端
-      #restart: always
+      restart: always
       depends_on: # 设置依赖关系
         - php
         # - mysql
@@ -29,7 +29,7 @@ services: # 包含的服务
       container_name: php
       stdin_open: true
       tty: true
-      #restart: always
+      restart: always
       volumes:
         - ./php/conf/php.ini:/usr/local/etc/php/php.ini
         - ./php/html/:/var/www/html/
@@ -43,7 +43,7 @@ services: # 包含的服务
       container_name: mysql-m
       stdin_open: true
       tty: true
-      #restart: always
+      restart: always
       volumes:
         - ./mysql/master/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
         - ./mysql/master/data/:/var/lib/mysql/
@@ -56,7 +56,7 @@ services: # 包含的服务
       container_name: mysql-s1
       stdin_open: true
       tty: true
-      #restart: always
+      restart: always
       volumes:
         - ./mysql/slave01/conf/mysql.cnf:/etc/mysql/conf.d/mysql.cnf
         - ./mysql/slave01/data/:/var/lib/mysql/
@@ -70,7 +70,7 @@ services: # 包含的服务
       container_name: redis-m
       stdin_open: true
       tty: true
-      #restart: always
+      restart: always
       volumes:
         - ./redis/master/:/usr/local/etc/redis/
       networks:
@@ -83,7 +83,7 @@ services: # 包含的服务
       container_name: redis-s1
       stdin_open: true
       tty: true
-      #restart: always
+      restart: always
       volumes:
         - ./redis/slave01/:/usr/local/etc/redis/
       networks:
